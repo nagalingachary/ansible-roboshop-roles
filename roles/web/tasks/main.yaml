@@ -31,6 +31,6 @@
   ansible.builtin.copy:
       src: roboshop.conf.j2
       dest: /etc/nginx/default.d/roboshop.conf
-      remote_src option: yes
+      remote_src: yes
   notify:
   - restart nginx
